@@ -4,35 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <title>ZORIONAAAK</title>
+
 </head>
 <body>
     
-    <h1>ZORIONAK ANETXUU!!</h1>
+    <h1 class="texto-animado"><i class="fas fa-heart fa-2x" style="color:red"></i> ZORIONAK ANETXUU!! <i class="fas fa-heart fa-2x" style="color:red"></i></h1>
 
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="images/factura_cabecera.png" alt="Foto 1"></div>
-          <div class="swiper-slide"><img src="images/notificacion_correo.jpg" alt="Foto 2"></div>
+    <div class="carrusel">
+        <div class="carrusel-imagenes">
+            <img src="images/factura_cabecera.png" alt="Imagen 1">
+            <img src="images/notificacion_correo.jpg" alt="Imagen 2">
         </div>
-        
-        <!-- Si quieres, agrega botones de navegación -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-      
-      <!-- Incluir el script de Swiper.js -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <script>
-        var swiper = new Swiper('.swiper-container', {
-          slidesPerView: 1,
-          spaceBetween: 10,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-      </script>
+        <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
+        <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
+    </div>
+    
+    <script src="script.js"></script> <!-- Enlace a tu JavaScript -->
 
+    <br/><br/>
 </body>
 </html>

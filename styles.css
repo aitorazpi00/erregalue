@@ -5,5 +5,61 @@ body {
 }
 
 h1{
+    font-family: "Playwrite IS", cursive;;
+    font-size: 40px;
     text-align: center;
 }
+
+.carrusel {
+    position: relative;
+    max-width: 600px; /* Ajusta el ancho según sea necesario */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel-imagenes {
+    display: flex;
+    transition: transform 0.5s ease; /* Efecto de transición suave */
+}
+
+.carrusel-imagenes img {
+    width: 100%; /* Las imágenes se ajustan al tamaño del contenedor */
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* .texto-animado {
+    white-space: nowrap;
+    animation: mover 8s linear infinite;
+} */
+
+
+@keyframes mover {
+    0% {
+        transform: translateX(-100%); /* Comienza fuera de la pantalla a la izquierda */
+    }
+    50% {
+        transform: translateX(0); /* Se mueve al centro */
+    }
+    100% {
+        transform: translateX(100%); /* Se mueve fuera de la pantalla a la derecha */
+    }
+} 
