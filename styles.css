@@ -12,7 +12,7 @@ h1{
 
 .carrusel {
     position: relative;
-    max-width: 600px; /* Ajusta el ancho según sea necesario */
+    max-width: 440px; /* Ajusta el ancho según sea necesario */
     margin: auto;
     overflow: hidden;
 }
