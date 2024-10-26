@@ -15,4 +15,4 @@ function cambiarImagen(n) {
 }
 
 // Opcional: cambia automáticamente las imágenes cada 5 segundos
-// setInterval(() => cambiarImagen(1), 5000);
+setInterval(() => cambiarImagen(1), 5000);
